@@ -10,10 +10,10 @@
 1. Run: ```docker-compose exec web python manage.py test apps```
 
 ### Edpoints: 
-/accounts/register/
-/accounts/login/
-/account/logout/
-/movies/  
-/favoritemovies/ 
+```/accounts/register/```
+```/accounts/login/```
+```/account/logout/```
+```/movies/```
+```/favoritemovies/``` 
 
 There is an Insomnia collection of request in the file examples.json
