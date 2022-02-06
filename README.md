@@ -7,7 +7,7 @@
 3. Run project: ```docker-compose up -d```
 
 ### To run tests
-1. Run: ```docker-compose exec web python manage.py test tests```
+1. Run: ```docker-compose exec web python manage.py test apps```
 
 ### Edpoints: 
 /accounts/register/
