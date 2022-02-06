@@ -1,0 +1,348 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-02-06T17:42:58.467Z",
+    "__export_source": "insomnia.desktop.app:v2021.7.2",
+    "resources": [
+        {
+            "_id": "req_b468f79c2e0f4698969df945e89c06a5",
+            "parentId": "fld_66cbe607367441f7a163e3ccc2d8778f",
+            "modified": 1644169295020,
+            "created": 1644168955659,
+            "url": "https://piolszewski94-moviesapi.herokuapp.com/accounts/logout/",
+            "name": "logout",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": ""
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_05b0957315464950803af39d5c8c6df1"
+                },
+                {
+                    "id": "pair_1b0a05a9017b457c90917b9c5e4a0449",
+                    "name": "Authorization",
+                    "value": "{{token}}",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1644168955659,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_66cbe607367441f7a163e3ccc2d8778f",
+            "parentId": "wrk_d7b39fc591a848d8b495f2f348b96d84",
+            "modified": 1644101012580,
+            "created": 1644101012580,
+            "name": "movies",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1644101012580,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_d7b39fc591a848d8b495f2f348b96d84",
+            "parentId": null,
+            "modified": 1628334597765,
+            "created": 1628334597765,
+            "name": "Insomnia",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_89300a52c77c41d19106b3ec3ec6c97d",
+            "parentId": "fld_66cbe607367441f7a163e3ccc2d8778f",
+            "modified": 1644169139982,
+            "created": 1644168909842,
+            "url": "https://piolszewski94-moviesapi.herokuapp.com/accounts/login/",
+            "name": "login",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\": \"testuser\",\n\t\"password\": \"testuser_pass\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_53916e174f874b17952024eae3067ffc"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1644168909842,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_a394aea0f080476dab96b6160faef518",
+            "parentId": "fld_66cbe607367441f7a163e3ccc2d8778f",
+            "modified": 1644169137898,
+            "created": 1644168759009,
+            "url": "https://piolszewski94-moviesapi.herokuapp.com/favoritemovies/",
+            "name": "favoritemovies",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_72685a78070141bb83106f9b73537331",
+                    "name": "Authorization",
+                    "value": "{{token}}",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1644168759009,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_d723801583124b87a432fa5927a6ee3e",
+            "parentId": "fld_66cbe607367441f7a163e3ccc2d8778f",
+            "modified": 1644169130555,
+            "created": 1644101182713,
+            "url": "https://piolszewski94-moviesapi.herokuapp.com/favoritemovies/",
+            "name": "favoritemovies",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"Title\": \"The Avengers\",\n\t\"Year\": \"2012\",\n\t\"Rated\": \"PG-13\",\n\t\"Released\": \"04 May 2012\",\n\t\"Runtime\": \"143 min\",\n\t\"Genre\": \"Action, Adventure, Sci-Fi\",\n\t\"Director\": \"Joss Whedon\",\n\t\"Writer\": \"Joss Whedon, Zak Penn\",\n\t\"Actors\": \"Robert Downey Jr., Chris Evans, Scarlett Johansson\",\n\t\"Plot\": \"Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.\",\n\t\"Language\": \"English, Russian, Hindi\",\n\t\"Country\": \"United States\",\n\t\"Awards\": \"Nominated for 1 Oscar. 38 wins & 80 nominations total\",\n\t\"Poster\": \"https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg\",\n\t\"Ratings\": [\n\t\t{\n\t\t\t\"Source\": \"Internet Movie Database\",\n\t\t\t\"Value\": \"8.0/10\"\n\t\t},\n\t\t{\n\t\t\t\"Source\": \"Rotten Tomatoes\",\n\t\t\t\"Value\": \"91%\"\n\t\t},\n\t\t{\n\t\t\t\"Source\": \"Metacritic\",\n\t\t\t\"Value\": \"69/100\"\n\t\t}\n\t],\n\t\"Metascore\": \"69\",\n\t\"imdbRating\": \"8.0\",\n\t\"imdbVotes\": \"1,333,613\",\n\t\"imdbID\": \"tt0848228\",\n\t\"Type\": \"movie\",\n\t\"DVD\": \"25 Sep 2012\",\n\t\"BoxOffice\": \"$623,357,910\",\n\t\"Production\": \"N/A\",\n\t\"Website\": \"N/A\",\n\t\"Response\": \"True\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_051df6eb3c5042618c8aa99535409bce"
+                },
+                {
+                    "id": "pair_d1f6b989a1fa4a719e61c6ec110146b7",
+                    "name": "Authorization",
+                    "value": "{{token}}",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1644137147109,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_5d6144c658734d098f585e0408e4ac4a",
+            "parentId": "fld_66cbe607367441f7a163e3ccc2d8778f",
+            "modified": 1644105562172,
+            "created": 1644105535209,
+            "url": "http://127.0.0.1:8000/accounts/profile/",
+            "name": "profile",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_7478c8bea90147f89f59c485c3a6280e",
+                    "name": "Authorization",
+                    "value": "Token b1caabd9f922b98f94339e5d5bd235a9685a952f",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1644105535209,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ef970d8a743e4a6b8db0cbbc7afda2ee",
+            "parentId": "fld_66cbe607367441f7a163e3ccc2d8778f",
+            "modified": 1644169120146,
+            "created": 1644102998384,
+            "url": "https://piolszewski94-moviesapi.herokuapp.com/accounts/register/",
+            "name": "register",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"username\": \"testuser\",\n\t\"email\": \"testuser@gmail.com\",\n\t\"password\": \"testuser_pass\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_5d8962bddfbb4b8798edfb1206cf85ee"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1644101182763,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_f75c8820989644e89a33b254e1a0661d",
+            "parentId": "fld_66cbe607367441f7a163e3ccc2d8778f",
+            "modified": 1644169115998,
+            "created": 1644101158306,
+            "url": "https://piolszewski94-moviesapi.herokuapp.com/movies/?t=avengers",
+            "name": "movies",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "id": "pair_30eb1360e1174496b9ba03e5b324d4f5",
+                    "name": "Authorization",
+                    "value": "{{token}}",
+                    "description": ""
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1644101158306,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_aa506b598f25963d4ef0ff9d72ec7805d3dfd63f",
+            "parentId": "wrk_d7b39fc591a848d8b495f2f348b96d84",
+            "modified": 1628334597799,
+            "created": 1628334597799,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1628334597799,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_aa506b598f25963d4ef0ff9d72ec7805d3dfd63f",
+            "parentId": "wrk_d7b39fc591a848d8b495f2f348b96d84",
+            "modified": 1628750050621,
+            "created": 1628334597803,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "csrftoken",
+                    "value": "GENIDXo7TdTBrCnkwdm3bgXiJdyxsh5zKxKV1r28Xn2yQFJukR65YLrNNAyCont1",
+                    "expires": "2022-08-11T06:34:09.000Z",
+                    "maxAge": 31449600,
+                    "domain": "p2rc.ownedoutcomes.com",
+                    "path": "/",
+                    "extensions": [
+                        "SameSite=Lax"
+                    ],
+                    "hostOnly": true,
+                    "creation": "2021-08-09T07:41:38.008Z",
+                    "lastAccessed": "2021-08-12T06:34:10.621Z",
+                    "id": "5486169474421339"
+                }
+            ],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_d76ff5d813494ce3be1ef7f938e0bbed",
+            "parentId": "wrk_d7b39fc591a848d8b495f2f348b96d84",
+            "modified": 1628334597766,
+            "created": 1628334597766,
+            "fileName": "Insomnia",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "env_1a4e53ad430d4d4daa4ab7b9a7845a90",
+            "parentId": "env_aa506b598f25963d4ef0ff9d72ec7805d3dfd63f",
+            "modified": 1644169017673,
+            "created": 1628334620093,
+            "name": "p2v3rc",
+            "data": {
+                "url": "https://p2rc.ownedoutcomes.com//backend-p2/graphql",
+                "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IklDSWpidkpYSXQ3X25PR05YWEZOdiJ9.eyJpc3MiOiJodHRwczovL293bmVkb3V0Y29tZXMudXMuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDYwZjAwM2FhNTVhMDIyMDA2YTdkOGM2YSIsImF1ZCI6WyJodHRwczovL3AyZ3JhcGhxbC1hcGkiLCJodHRwczovL293bmVkb3V0Y29tZXMudXMuYXV0aDAuY29tL3VzZXJpbmZvIl0sImlhdCI6MTYyODc1MDAyOCwiZXhwIjoxNjI4NzUwOTI4LCJhenAiOiJKaHBmU1FmUzc2WnZ3aTFGTUtBUm42a0VhMERYa2FOWiIsInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJndHkiOiJwYXNzd29yZCJ9.XqucwWF-1wQnhJCp9jaQxQOiRio3qp0E7vvs4Aw1gXyDExjsx42bESdU-4-5erJO68i8EYz3-L-diUfvPS80iMDgISNx4GbaICUoexUHcfwecjKPp37AHZFxtgTpRcwNqFfYS-ZF89ihcE-Eaka0E70RwbPSgh8X5qcu0pIRNKHU9ZRNP9kgnmwuhfcF7BRfd9UivnTVdPVQOIsyvZFmBv1vWzmJMiX7RjHpPl_FzEaQtutPUxVOYGf64wJ1La6KML1ObjYSycDMIXMxxQKtz-JL-U_uZ3irgs884jcOIRQ0BkR9zrtPGQEouq7l3i9roqCm2bpsWrfUvcHg_9XJaA"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "url",
+                    "access_token"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1628334620093,
+            "_type": "environment"
+        },
+        {
+            "_id": "env_39c64f5ae8c54acb96970738c61f57d4",
+            "parentId": "env_aa506b598f25963d4ef0ff9d72ec7805d3dfd63f",
+            "modified": 1644169112283,
+            "created": 1644168994759,
+            "name": "piolszewski94-moviesapi",
+            "data": {
+                "token": "Token f83874538a8cef7aa1f6ec4f7c43a6f951be4918"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "token"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1644168994759,
+            "_type": "environment"
+        }
+    ]
+}
